@@ -1,0 +1,13 @@
+*.pyc
+__pycache__/
+
+venv/
+.env
+
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.log
+*.tmp
+
+.cache/

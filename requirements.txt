@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+pytest
+python-dotenv
+flake8
+pre-commit
+black
