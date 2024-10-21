@@ -24,46 +24,39 @@ Para crear el entorno de desarrollo y ejecutar la aplicación, sigue estos pasos
 
 En Windows:
 
-    ```
     python -m venv venv
     venv\Scripts\activate
     pip install -r requirements.txt
 
-   ```
 En macOS/Linux:
 
-   ```
     python3 -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
-   ```
+
+
 Crea un archivo .env:
 
 En la raíz del proyecto, crea un archivo llamado .env y agrega la URL de tu ambiente, o usa el .env.example. Por ejemplo:
 
-   ```
     URL=<LOCALHOST>
-   ```
 
 Corre el back con:
 
-   ```
     uvicorn app.api.main:app --reload
 
-   ```
-
+    
 3. **Ejecuta las pruebas**:
 
 Las pruebas están escritas utilizando pytest y fixtures para garantizar una buena cobertura y calidad del código. Para ejecutar todas las pruebas, utiliza:
-   ```
+
     pytest tests
-   ```
+
 
 Para mantener la calidad del código, se ha configurado flake8 como linter. Para ejecutar el linter, utiliza:
-   ```
+
     flake8 --config=.flake8
-   ```
+
 Si usas pre-commit, puedes ejecutar todos los ganchos configurados con:
-   ```
+
     pre-commit run --all-files
-   ```
